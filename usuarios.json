@@ -1,0 +1,346 @@
+{
+  "data": [
+    {
+      "pedidoWeb": "RTY-055261",
+      "fecha": "14/02/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 156,
+				"nombre": "Monitor Samsung",
+				"clave": "CPUASS078",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 10,
+        "id": 230,
+				"nombre": "Disco Solido",
+				"clave": "NBKBIXL060",
+				"precio": 676.5,
+				"moneda": "MXN",
+        "estatus": "Pendiente"
+				},
+				{
+				"cantidad": 13,
+        "id": 10,
+				"nombre": "Memoria Ram 8Gb",
+				"clave": "WBKBIT019",
+				"precio": 676.5,
+				"moneda": "MXN",
+        "estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "WEB-0552645",
+      "fecha": "11/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": 
+			[
+				{
+				"cantidad": 1,
+        "id": 156,
+				"nombre": "Tarjeta Grafica",
+				"clave": "CPUASS078",
+				"precio": 414.75,
+				"moneda": "USD",
+        "estatus": "Pendiente"
+				},
+				{
+				"cantidad": 10,
+        "id": 230,
+				"nombre": "Disco Duro",
+				"clave": "SLDIXL060",
+				"precio": 676.5,
+				"moneda": "MXN",
+        "estatus": "Pendiente"
+				}
+			]
+    },
+    {
+      "pedidoWeb": "ALB-055261",
+      "fecha": "24/01/2021",
+      "factura": "MYRT7398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de credito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": 
+			[
+				{
+				"cantidad": 4,
+        "id": 156,
+				"nombre": "Pantalla Plasma",
+				"clave": "CPUA34548",
+				"precio": 414.75,
+				"moneda": "USD",
+        "estatus": "Pendiente"
+				}
+			]
+    },
+    {
+      "pedidoWeb": "BCG-055261",
+      "fecha": "29/02/2021",
+      "factura": "LIT207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Efectivo",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Galaxy S9+",
+				"clave": "CPA00S020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Computadora Acer",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        "estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "HPX-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTRR98998",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Funda ART98",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Clips",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Micas Telefono",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Printer HP",
+				"clave": "APT324010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}
+      ]
+    },
+    {
+      "pedidoWeb": "KLT-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Efectivo ",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Camara Cannon",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Lente TY2342",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "CFF-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 5,
+        "id": 120,
+				"nombre": "Bocinas Boce",
+				"clave": "CPUASS020",
+				"precio": 4414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "EER-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de credito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Bateria LP34",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 10,
+				"id": 134,
+				"nombre": "Paquete Hojas blancas",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "ORG-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Lampara escritorio",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Memoria Ram 4Gb",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "UWV-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de debito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Manual C#",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Computadora HP Pavillion",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "LLU-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de credito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 1,
+        "id": 120,
+				"nombre": "Pantalla Led 34",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				},
+				{
+				"cantidad": 1,
+				"id": 134,
+				"nombre": "Karspersky Antivirus",
+				"clave": "NBKBIT010",
+				"precio": 676.5,
+				"moneda": "MXN",
+        		"estatus": "Pendiente"
+				}]
+    },
+    {
+      "pedidoWeb": "PHM-055261",
+      "fecha": "14/01/2021",
+      "factura": "MTY207398",
+      "metodoEnvio": "Por paqueteria",
+      "formaPago": "Tarjeta de credito",
+      "tipoDeCambio": 21.72,
+      "estatus": "Pendiente",
+      "producto": [
+				{
+				"cantidad": 4,
+        "id": 120,
+				"nombre": "Office 365",
+				"clave": "CPUASS020",
+				"precio": 414.75,
+				"moneda": "USD",
+        		"estatus": "Pendiente"
+				}]
+    }
+
+  ]
+}

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DataTables</title>
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- CSS personalizado --> 
+    <link rel="stylesheet" href="main.css">  
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">  
+      
+      
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css"/>
+    <!--datables estilo bootstrap 4 CSS-->  
+    <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.24/css/dataTables.bootstrap4.min.css">
+           
+  </head>
+    
+  <body> 
+     <header>
+         <h1 class="text-center text-light">Órdenes de compra</h1>
+         <h2 class="text-center text-light">Carrito de compras</span></h2> 
+     </header>    
+    <div style="height:50px"></div>
+     
+    <!--Ejemplo tabla con DataTables-->
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive">        
+                        <table id="example" class="display" cellspacing="0" width="100%">
+                            <thead>
+                              <tr>
+                                <th></th>
+								<th scope="col">Folio</th>
+								<th scope="col">Fecha</th>
+								<th scope="col">Factura</th>
+                                <th scope="col">Método de envío</th>
+								<th scope="col">Forma de pago</th>
+								<th scope="col">Estatus</th>
+                              </tr>
+                            </thead>
+                          
+                          </table>        
+                    </div>
+                </div>
+        </div>  
+    </div>    
+      
+<script>
+     function processResponse(res){
+  var interactions = response[0].interactions;
+
+ // If no interactions, you may to return a single row
+
+ if(!interactions || interactions.length === 0){
+      return '<tr><td>No interactions to display.</td></tr>'  
+ }
+
+ var interactionsRows = interactions.map(function(interaction){
+      return '<tr>' +
+            '<td>Agent:</td>' +
+            '<td>Datum:</td>' +
+            '<td>Contactnr:</td>' +
+            '<td>' + interaction.queue+ '</td>' +
+        '</tr>' +
+        '<tr>' +
+            '<td>Contactnummer:</td>' +
+            '<td>' + interaction.interactionStart+ '</td>' +
+        '</tr>' +  
+        '<tr>' +
+            '<td>TotaalPoging</td>' +
+            '<td>' + interaction.interactionEnd+ '</td>' +
+        '</tr>'
+ });
+
+ // Concatenate the rows into one string
+ return interactionsRows.join();
+}
+</script>
+        
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<!--     <script>
+function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+        '<tr>'+
+            '<td>Id:</td>'+
+            '<td>'+d.fecha+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Clave:</td>'+
+            '<td>'+d.fecha+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Cantidad:</td>'+
+            '<td>'+d.fecha+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Nombre de producto:</td>'+
+            '<td>'+d.fecha+'</td>'+
+        '</tr>'+
+        '<tr>'+
+            '<td>Precio:</td>'+
+            '<td>'+d.fecha+'</td>'+
+        '</tr>'+
+    '</table>';
+}
+ 
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "ajax": "usuarios.json",
+        "columns": [
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },
+            { "data": "pedidoWeb" },
+            { "data": "fecha" },
+            { "data": "factura" },
+            { "data": "formaPago" },
+            { "data": "metodoEnvio" },
+            { "data": "estatus" }
+        ],
+        "order": [[1, 'asc']]
+    } );
+     
+    // Add event listener for opening and closing details
+    $('#example tbody').on('click', 'td.details-control', function () {
+        var tr = $(this).closest('tr');
+        var row = table.row( tr );
+ 
+        if ( row.child.isShown() ) {
+            // This row is already open - close it
+            row.child.hide();
+            tr.removeClass('shown');
+        }
+        else {
+            // Open this row
+            row.child( format(row.data()) ).show();
+            tr.addClass('shown');
+        }
+    } );
+} );
+    </script>
+
+ -->
+
+
+
+
+<!-- Segunda tabla -->
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "ajax": "usuarios.json",
+        "columns": [
+            {
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },
+            { "data": "pedidoWeb" },
+            { "data": "fecha" },
+            { "data": "factura" },
+            { "data": "metodoEnvio" },
+            { "data": "formaPago" },
+            { "data": "estatus" }
+        ],
+        "order": [[1, 'asc']]
+    } );
+
+  // Add event listener for opening and closing details
+  $('#example tbody').on('click', 'td.details-control', function() {
+    var tr = $(this).closest('tr');
+    var row = table.row(tr);
+
+    if (row.child.isShown()) {
+      // This row is already open - close it
+      row.child.hide();
+      tr.removeClass('shown');
+    } else {
+      // Open this row
+      row.child(format(row.data())).show();
+      tr.addClass('shown');
+    }
+  });
+
+});
+
+function format(d) {
+  // `d` is the original data object for the row
+  return '<td colspan="6">' + '<div>' + '<table cellpadding="5" cellspacing="10" border="0" style="padding-left:100px;">' + 
+    '<thead>'+
+    '<tr>' +
+        '<th>Id:</th>' +
+        '<th>Clave:</th>' +
+        '<th>Cantidad:</th>' +
+        '<th>Nombre de producto:</th>' +
+        '<th>Precio:</th>' +
+    '</tr>' +
+    '<thead>'+
+    '<tbody>'+
+         obtenerFilas(d.pedidoWeb) +
+    '</tbody>'+
+    '</table>'+
+    '</div>' +
+    '</td>';
+}
+
+//Aqui se llenan los datos de los productos dependiendo el pedidoWeb
+function obtenerFilas(pedidoWeb) {  
+   var calif = '_'
+   $.ajax({
+    type: "GET",
+    async: false, 
+    url: "usuarios.json",
+    success: function(data) {
+      var productosEnCarrito = data.data
+        .filter(function(product) {
+        return product.pedidoWeb == pedidoWeb
+        }) 
+        var productos = productosEnCarrito[0].producto;
+        console.log(productos)
+        calif = ''
+        productos.forEach(producto => {
+            calif += `
+            <tr>
+            <td>${producto.id}</td>
+            <td>${producto.clave}</td>
+            <td>${producto.cantidad}</td>
+            <td>${producto.nombre}</td>
+            <td>${producto.precio}</td>
+            </tr>
+        `;       
+        });  
+    },
+    error: function(objXMLHttpRequest) {
+      console.log("error", objXMLHttpRequest);
+    }
+  }); 
+  
+  return calif;
+}
+
+</script>
+      
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+      
+    <!-- datatables JS -->
+    <script type="text/javascript" src="datatables/datatables.min.js"></script>    
+     
+    <script type="text/javascript" src="main.js"></script>  
+    
+    
+  </body>
+</html>
